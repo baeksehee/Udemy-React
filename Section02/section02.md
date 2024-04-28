@@ -43,3 +43,40 @@ import * as util from "상대 경로"
 
 console.log(util.변수1)
 ```
+
+## 변수 `let 키워드`
+
+변수: 값을 저장하는 데이터 컨테이너
+
+- 원하는 이름 할당
+- 코드 내에서 이 이름을 식별자로 사용해 변수에 저장된 값을 사용해야 할 때 그 이름을 사용하면 됨
+
+## 상수 `const 키워드`
+
+변수와의 차이점: 상수에는 값을 다시 할당할 수 없음
+
+> 다시 할당하지 않아야 할 값에는 const를 사용하는 것이 좋음
+
+## 함수 `function 키워드`
+
+```js
+function createGreeting(userName, message = "Hello!") {
+  console.log(userName);
+  console.log(message);
+}
+
+//  createGreeting -> 함수 이름
+//  userName, message 매개 변수, message는 기본값 할당
+```
+
+## 함수 `화살표 함수 문법`
+
+```js
+(userName, message) => {
+  console.log("Hello");
+  return userName + message;
+};
+
+//  1- 매개변수가 하나일 때는 목록 괄호 생략 가능
+//  2- 반환문 에 다른 로직이 없는 경우, `return 키워드`와 중괄호를 생략할 수 있음
+```
